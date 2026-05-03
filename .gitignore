@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Arduino
+*.elf
+*.bin
+*.hex
+*.map
+
+# Edge Impulse / build artifacts
+build/
+.build/
+
+# VS Code
+.vscode/
+
+# Python (if any scripts)
+__pycache__/
+*.pyc
+*.pyo
+
+# Zip files (keep your repo clean, document separately)
+*.zip
