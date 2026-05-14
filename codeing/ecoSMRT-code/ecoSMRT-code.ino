@@ -164,7 +164,7 @@ void loop()
         delay(3000);
         lidServo.write(80);  // start closed
     }
-    if (strcmp(max_label, "notbottle") == 0 && max_value > 0.1) {
+    if (strcmp(max_label, "notbottle") == 0 && max_value > 0.7) {
         ei_printf("not Bottle detected!\r\n");
         // pray for ts  
         lidServo.write(160);  // open
