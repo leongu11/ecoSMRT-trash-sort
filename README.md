@@ -25,10 +25,17 @@ Camera - OV2640
 I have had my fair share of bad experience with the SG90 on multiple accounts, so I opted for its counterpart with metal-geared teeth, which seemed to be a good idea for tourque.
 
 ## Electronic Framework
-I used a perfboard for this prototype to organize electronics. 
-The servo's jumper wires connect to sockets and pass through a diode and capacitor in order to prevent spikes and browning out. These go to terminals where the Xiao's jumper wires are connected. Schematic for wiring on perfboard:
+I designed a schematic and PCB for this project in KiCAD
+
+Schematic for wiring on perfboard:
 
 <img width="406" height="380" alt="image" src="https://github.com/user-attachments/assets/87bba609-41c8-49c5-919e-325569f664a4" />
+
+PCB: 
+
+<img width="678" height="443" alt="image" src="https://github.com/user-attachments/assets/df641945-13ae-45de-a8bf-8c197a09a581" />
+
+I plan to use a perfboard using these as references for the physical project. 
 
 ## CAD / 3d Printed Parts
 <img width="1520" height="680" alt="SMRTCAN--exploded2" src="https://github.com/user-attachments/assets/87e8d460-363f-445a-8450-bfc745447585" />
