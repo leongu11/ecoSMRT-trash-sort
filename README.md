@@ -17,6 +17,11 @@ Often times, managing waste can be overwhelming and done incorrectly. At the rec
 ## How ecoSMRT was made
 I had originally settled for a more complex mechanical sorter, but the AI proved to be a challenge, so I simplified its design down to focus on firmware. The AI and curating a dataset which could yield decent results was also hard: At first, I was taking pre-existing datasets online, but the models were terrible. I did a lot of research and realized that I should probably use the native camera and setup for the training data, which turned out to work much better. Also, I switched from FOMO to MobileNet because like a month in I realized that image detection and classification were completely different (explanation found in journal). Everything else was relatively smooth sailing.
 
+## Bill of Materials
+| Component | Description | Cost | Link | 
+|-----------|----------|-------------|-------|
+| XIAO ESP32S3 Sense | Microcontroller with camera | $23.99 | [link](https://www.amazon.com/gp/product/B0CNL755KP/ref=ox_sc_act_title_2?smid=A2QTZX14X1D97I&th=1)
+| MG90 servo | Sorting | $8.88 | [link](https://www.amazon.com/Seeed-Studio-XIAO-ESP32-Sense/dp/B0C69FFVHH?th=1)
 ## Hardware 
 - MCU - Xiao ESP32S3-Sense w/ built-in camera module:
 The Xiao ESP32 felt like the suitable choice because of its dual-core processors and built-in camera, which allowed the classification model to run smoothly locally, along with its GPIO capabilities.
@@ -34,6 +39,7 @@ Schematic for wiring on perfboard:
 PCB: 
 
 <img width="678" height="443" alt="image" src="https://github.com/user-attachments/assets/df641945-13ae-45de-a8bf-8c197a09a581" />
+<img width="364" height="410" alt="image" src="https://github.com/user-attachments/assets/52fd8b0b-f946-4868-863c-a0bbfea5809b" />
 
 I plan to use a perfboard using these as references for the physical project. 
 
